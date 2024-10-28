@@ -1,0 +1,21 @@
+@import "../mixin";
+
+.edit {
+  width: 100%;
+  @include d-flex(column, flex-start, center);
+  padding: 2rem;
+  padding-top: 4rem;
+  gap: 2rem;
+  .input{
+    @include d-flex(column, flex-start, center);
+    width: 400px;
+    max-width: 100%;
+    gap:2rem;
+    *{
+        width: 100%;
+    }
+    .button{
+        @include d-flex(row, flex-start, center);
+    }
+  }
+}
